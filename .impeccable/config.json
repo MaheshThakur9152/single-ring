@@ -1,0 +1,44 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "styles.css"
+        ],
+        "createdAt": "2026-11-24T11:15:51.390Z",
+        "reason": "brief specifies gilded set times/numerals in gold engraving style"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "styles.css"
+        ],
+        "createdAt": "2026-11-24T11:15:51.560Z",
+        "reason": "brief specifies fan mask led by a glowing gold rib"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-24T11:15:51.733Z",
+        "reason": "brief specifies fan mask led by a glowing gold rib"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-24T11:20:08.844Z",
+        "reason": "false positive: flagged containers use clamp() padding (28-150px); rendered screenshots at 390/820/1440px show generous insets"
+      }
+    ]
+  }
+}

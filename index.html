@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Spiral — A Single Ring</title>
+<meta name="description" content="One ring, shown by invitation: a spiral of graded colour stones and black stones, coiled in gold.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Limelight&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230F2A2E'/%3E%3Cpath d='M16 16c1-1 3 0 2 2-1 2-4 2-5 0-2-2-1-6 2-7 4-1 8 2 8 6 0 5-5 8-10 7-5-1-8-6-7-11' fill='none' stroke='%23C9A45C' stroke-width='1.6'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav-mark" href="#top">The Spiral</a>
+  <a class="btn btn-sm" href="#rsvp">Request a viewing</a>
+</header>
+
+<main id="top">
+
+<!-- I. HERO — the invitation -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="invite">
+    <svg class="rays" viewBox="-1000 -1000 2000 2000" aria-hidden="true"></svg>
+    <svg class="arch" viewBox="0 0 600 860" aria-hidden="true">
+      <defs>
+        <clipPath id="medal"><circle cx="300" cy="330" r="112"/></clipPath>
+      </defs>
+      <path class="arch-fill" d="M50 860V330H70V295H90V265A210 210 0 0 1 510 265V295H530V330H550V860Z"/>
+      <path class="draw" style="--d:.15s" pathLength="1" d="M50 860V330H70V295H90V265A210 210 0 0 1 510 265V295H530V330H550V860"/>
+      <path class="draw" style="--d:.3s" pathLength="1" d="M85 860V345H105V305H120V280A180 180 0 0 1 480 280V305H495V345H515V860"/>
+      <path class="draw thin" style="--d:.45s" pathLength="1" d="M140 860V300A160 160 0 0 1 460 300V860"/>
+      <g class="spears"></g>
+      <g class="dial"></g>
+      <image class="medal-img" href="images/ring-top.jpg" x="188" y="218" width="224" height="224" clip-path="url(#medal)" preserveAspectRatio="xMidYMid slice"/>
+      <circle class="draw" style="--d:.7s" pathLength="1" cx="300" cy="330" r="113"/>
+      <g class="fan"></g>
+    </svg>
+    <div class="hero-text">
+      <p class="kicker rise" style="--d:.5s">You are cordially invited to view</p>
+      <h1 id="hero-title" class="name"><span class="the rise" style="--d:.6s">The</span><span class="word" aria-label="Spiral">SPIRAL</span></h1>
+      <p class="sub rise" style="--d:1.3s">A single ring &middot; <span class="ph">[Maker or shop name]</span> &middot; <span class="ph">[City]</span></p>
+    </div>
+  </div>
+  <div class="hero-cta rise" style="--d:1.5s">
+    <a class="btn" href="#rsvp">Request a viewing</a>
+    <a class="btn btn-ghost" href="#piece">See the ring</a>
+  </div>
+</section>
+
+<!-- II. THE PIECE — three views, the particulars -->
+<section id="piece" class="sec teal">
+  <div class="crest" aria-hidden="true"></div>
+  <p class="eyebrow">Presenting</p>
+  <h2>One ring, three views</h2>
+  <p class="lede">A coil of gold that turns twice on itself, paved end to end. Coloured stones run the length of the spiral, graded through the spectrum from red and rose to violet, blue, teal, green, gold and peach, with a river of black stones flowing between them.</p>
+
+  <ol class="views">
+    <li class="view">
+      <span class="numeral">01</span>
+      <figure class="plate"><img src="images/ring-top.jpg" alt="The ring seen from above: a two-turn spiral paved with rainbow-graded colour stones and black stones in gold" loading="lazy" width="900" height="900"></figure>
+      <h3>From above</h3>
+      <p>The spiral opens from a small golden curl at the centre and widens with each turn.</p>
+    </li>
+    <li class="view">
+      <span class="numeral">02</span>
+      <figure class="plate"><img src="images/ring-front.jpg" alt="The ring seen face on: the spiral crown rises in two tiers above a plain gold band" loading="lazy" width="1000" height="995"></figure>
+      <h3>Face on</h3>
+      <p>The crown lifts in two tiers above a plain, polished band.</p>
+    </li>
+    <li class="view">
+      <span class="numeral">03</span>
+      <figure class="plate"><img src="images/ring-side.jpg" alt="The ring in profile: the paved spiral sweeps down the side of the band" loading="lazy" width="900" height="925"></figure>
+      <h3>In profile</h3>
+      <p>From the side, the paving sweeps down and around the finger.</p>
+    </li>
+  </ol>
+
+  <div class="particulars">
+    <h3 class="part-title">The particulars</h3>
+    <dl>
+      <div><dt>Metal</dt><dd class="ph">[e.g. 18k yellow gold]</dd></div>
+      <div><dt>Colour stones</dt><dd class="ph">[Stone type and count]</dd></div>
+      <div><dt>Black stones</dt><dd class="ph">[Stone type and count]</dd></div>
+      <div><dt>Total weight</dt><dd class="ph">[Carats]</dd></div>
+      <div><dt>Ring size</dt><dd class="ph">[Size]</dd></div>
+      <div><dt>Price</dt><dd class="ph price">[Price, or &ldquo;on request&rdquo;]</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- III. THE DETAILS — pinned reveal, one at a time -->
+<section id="details" class="details teal" style="--n:4" aria-labelledby="dt-title">
+  <div class="dt-stage">
+    <div class="dt-head">
+      <div class="crest" aria-hidden="true"></div>
+      <h2 id="dt-title">The details</h2>
+      <p class="dt-count" aria-hidden="true"><span class="dt-now">I</span> / IV</p>
+    </div>
+    <div class="dt-items">
+      <article class="dt-item">
+        <div class="dt-fig"><span class="dt-mask"><img class="whole" src="images/ring-top.jpg" alt="The spiral seen from above" loading="lazy"></span><span class="dt-rib"></span></div>
+        <div class="dt-copy">
+          <svg class="dt-icon" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M32 32c2-2 5 0 4 3-1 4-7 5-10 2-4-4-2-11 4-13 7-2 14 3 14 11 0 9-9 15-18 13-10-2-16-12-13-22 3-11 15-17 26-14"/><circle pathLength="1" cx="32" cy="32" r="29"/></svg>
+          <p class="dt-num">I</p>
+          <h3>The spiral</h3>
+          <p>Two full turns, tightening to a polished golden curl at the very centre.</p>
+        </div>
+      </article>
+      <article class="dt-item">
+        <div class="dt-fig"><span class="dt-mask"><img src="images/detail-colour.jpg" alt="Close view of the graded colour stones along the spiral" loading="lazy"></span><span class="dt-rib"></span></div>
+        <div class="dt-copy">
+          <svg class="dt-icon" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M20 6h24l14 14v24L44 58H20L6 44V20Z"/><path pathLength="1" d="M24 18h16l6 6v16l-6 6H24l-6-6V24Z"/><path pathLength="1" d="M20 6l4 12M44 6l-4 12M58 20l-12 4M58 44l-12-4M44 58l-4-12M20 58l4-12M6 44l12-4M6 20l12 4"/></svg>
+          <p class="dt-num">II</p>
+          <h3>The colour</h3>
+          <p>Stone by stone, the colour moves through the spectrum, so no two turns of the spiral look alike.</p>
+        </div>
+      </article>
+      <article class="dt-item">
+        <div class="dt-fig"><span class="dt-mask"><img src="images/detail-black.jpg" alt="Close view of the black stones paved beside the colour stones" loading="lazy"></span><span class="dt-rib"></span></div>
+        <div class="dt-copy">
+          <svg class="dt-icon" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M6 24 16 12h32l10 12L32 58Z"/><path pathLength="1" d="M6 24h52M16 12l8 12 8-12 8 12 8-12"/><path pathLength="1" d="M24 24l8 34 8-34"/></svg>
+          <p class="dt-num">III</p>
+          <h3>The black stones</h3>
+          <p>A dark river of black stones runs inside every turn and sets the colour alight.</p>
+        </div>
+      </article>
+      <article class="dt-item">
+        <div class="dt-fig"><span class="dt-mask"><img class="whole" src="images/ring-front.jpg" alt="The whole ring face on, showing the plain polished gold band beneath the spiral" loading="lazy"></span><span class="dt-rib"></span></div>
+        <div class="dt-copy">
+          <svg class="dt-icon" viewBox="0 0 64 64" aria-hidden="true"><ellipse pathLength="1" cx="32" cy="36" rx="22" ry="22"/><ellipse pathLength="1" cx="32" cy="36" rx="16" ry="16"/><path pathLength="1" d="M18 18c6-8 22-8 28 0"/></svg>
+          <p class="dt-num">IV</p>
+          <h3>The band</h3>
+          <p>Under all that sparkle, a plain, smooth band of polished gold.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- IV. THE ENGRAVING — traces on scroll -->
+<section id="drawing" class="drawing ink" aria-labelledby="dr-title">
+  <div class="dr-stage">
+    <div class="crest" aria-hidden="true"></div>
+    <h2 id="dr-title">Drawn from the piece</h2>
+    <svg class="engraving" viewBox="0 0 600 640" role="img" aria-label="Gold line drawing of the ring: a spiral crown above a round band, standing on a stepped stage"></svg>
+  </div>
+</section>
+
+<!-- V. MADE TO YOUR HAND — oxblood -->
+<section id="hand" class="sec oxblood">
+  <div class="brackets">
+    <span class="br tl"></span><span class="br tr"></span><span class="br bl"></span><span class="br br-"></span>
+    <div class="crest" aria-hidden="true"></div>
+    <p class="eyebrow">By arrangement</p>
+    <h2>Made to your hand</h2>
+    <p class="lede">Every hand is different. Ask us about sizing, engraving, or seeing the ring in person before you decide.</p>
+    <ul class="offers">
+      <li><span class="offer-k">Sizing</span><span class="ph">[What you offer, e.g. resizing and any cost]</span></li>
+      <li><span class="offer-k">Engraving</span><span class="ph">[Offered or not, and how]</span></li>
+      <li><span class="offer-k">Private viewing</span><span class="ph">[In person, by video call, or both]</span></li>
+    </ul>
+    <a class="btn" href="#rsvp">Ask about the ring</a>
+  </div>
+</section>
+
+<!-- VI. RSVP — ivory card -->
+<section id="rsvp" class="sec teal">
+  <div class="card">
+    <div class="card-in">
+      <p class="rsvp-mark">R.S.V.P.</p>
+      <h2>Request a viewing</h2>
+      <p class="card-lede">Tell us when suits you and we will reply to arrange it.</p>
+      <form class="rsvp-form" novalidate>
+        <label>Your name<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>Phone <em>(optional)</em><input name="phone" type="tel" autocomplete="tel"></label>
+        <label>Preferred date<input name="date" type="date"></label>
+        <label class="full">Message <em>(optional)</em><textarea name="msg" rows="3" placeholder="Your ring size, questions, anything you'd like us to know"></textarea></label>
+        <button class="btn btn-dark full" type="submit">Send request</button>
+        <p class="form-note full" role="status">This opens your own email app with the request filled in, ready to send.</p>
+      </form>
+      <p class="card-alt">Or call <span class="ph">[Your phone number]</span> &middot; <span class="ph">[Your email]</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- VII. CARE & TERMS — near-black, Roman numerals -->
+<section id="care" class="sec ink">
+  <div class="crest" aria-hidden="true"></div>
+  <p class="eyebrow">Kindly observe</p>
+  <h2>Care &amp; terms</h2>
+  <ol class="rules">
+    <li><span class="rn">I</span><div><h3>Keep it apart</h3><p>Store the ring on its own in a soft pouch or lined box, so stones don&rsquo;t scratch other pieces.</p></div></li>
+    <li><span class="rn">II</span><div><h3>Last on, first off</h3><p>Put it on after lotion and perfume. Take it off for swimming, cleaning and the gym.</p></div></li>
+    <li><span class="rn">III</span><div><h3>Clean gently</h3><p>Warm water, a drop of mild soap and a soft brush. Ask us before using an ultrasonic cleaner.</p></div></li>
+    <li><span class="rn">IV</span><div><h3>Sizing</h3><p class="ph">[Your sizing policy]</p></div></li>
+    <li><span class="rn">V</span><div><h3>Returns</h3><p class="ph">[Your returns policy]</p></div></li>
+    <li><span class="rn">VI</span><div><h3>Delivery</h3><p class="ph">[How the ring is shipped or collected, and whether it is insured]</p></div></li>
+  </ol>
+</section>
+
+<!-- VIII. FIND US — drawn map & hours -->
+<section id="visit" class="sec teal">
+  <div class="crest" aria-hidden="true"></div>
+  <p class="eyebrow">Find us</p>
+  <h2>Where &amp; when</h2>
+  <div class="visit">
+    <figure class="map">
+      <svg viewBox="0 0 600 420" role="img" aria-label="Illustrated street map with a gold star marking our location"></svg>
+      <figcaption>Illustration only. Not to scale.</figcaption>
+    </figure>
+    <div class="hours">
+      <h3>Address</h3>
+      <p class="ph">[Street address, City, Postcode]</p>
+      <h3>Hours</h3>
+      <dl>
+        <div><dt class="ph">[Days]</dt><dd class="ph">[Opening hours]</dd></div>
+        <div><dt class="ph">[Days]</dt><dd class="ph">[Opening hours or &ldquo;by appointment&rdquo;]</dd></div>
+      </dl>
+      <a class="btn" href="#rsvp">Request a viewing</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="crest" aria-hidden="true"></div>
+  <p class="foot-name" aria-hidden="true">SPIRAL</p>
+  <p class="foot-line">The Spiral &middot; a single ring &middot; <span class="ph">[Maker or shop name]</span></p>
+  <p class="foot-line"><span class="ph">[Phone]</span> &middot; <span class="ph">[Email]</span> &middot; <span class="ph">[Instagram or other links]</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
